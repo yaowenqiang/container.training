@@ -21,3 +21,17 @@
 
 > kubectl config set-cluster kubernetes --server=https://X.X.X.X:6443
 > kubectl config set-cluster kubernetes --insecure-skip-tls-verify
+
+# completion 
+>  yum install -y bash-completion
+> source /usr/share/bash-completion/bash_completion
+> source <(kubectl completion bash)
+> echo "source <(kubectl completion bash)" >> ~/.bashrc # 在您的 bash shell 中永久的添加自动补全
+> alias k=kubectl
+> complete -F __start_kubectl k
+
+
+# networking 
+
+> docker inspect --format '{{ .State.Pid }}' container-id-or-name
+> nsenter -t pid -n ip addr
