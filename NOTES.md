@@ -12,7 +12,7 @@
 > kill a job
 > kill %1 
 
-> kubectl proxy --port=8888 --address=0.0.0.0 --accept-hosts=.*<Paste>
+> kubectl proxy --port=8888 --address=0.0.0.0 --accept-hosts=.*
 
 # update cluster
 
@@ -34,4 +34,10 @@
 # networking 
 
 > docker inspect --format '{{ .State.Pid }}' container-id-or-name
+> 
 > nsenter -t pid -n ip addr
+
+# Update cluster  server address 
+
+> kubectl config set-cluster kubernetes --server=https://X.X.X.X:6443
+> kubectl config set-cluster kubernetes --insecure-skip-tls-verify
