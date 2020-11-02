@@ -1,0 +1,2 @@
+print('Hello Tiltfile')
+k8s_yaml('app.yaml')

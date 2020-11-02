@@ -127,3 +127,6 @@ done
 
 
 
+## install skaffold
+
+> wget https://github.com/GoogleContainerTools/skaffold/releases/download/v1.16.0/skaffold-linux-amd64
