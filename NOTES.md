@@ -130,3 +130,6 @@ done
 ## install skaffold
 
 > wget https://github.com/GoogleContainerTools/skaffold/releases/download/v1.16.0/skaffold-linux-amd64
+
+## install Cilium
+> https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/
