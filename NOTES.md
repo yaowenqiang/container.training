@@ -133,3 +133,9 @@ done
 
 ## install Cilium
 > https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/
+
+## ingress
+> https://kubernetes.io/zh/docs/concepts/services-networking/ingress/
+
+# treafik
+> https://doc.traefik.io/traefik/v1.7/user-guide/kubernetes/
