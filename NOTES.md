@@ -133,3 +133,8 @@ done
 
 ## install Cilium
 > https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/
+## install cotp
+> sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.4/ctop-0.7.4-linux-amd64 -O /usr/local/bin/ctop
+## install lazydocker
+> curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+
