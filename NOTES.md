@@ -138,3 +138,9 @@ done
 ## install lazydocker
 > curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
+
+## ingress
+> https://kubernetes.io/zh/docs/concepts/services-networking/ingress/
+
+# treafik
+> https://doc.traefik.io/traefik/v1.7/user-guide/kubernetes/
