@@ -19,7 +19,7 @@ spec:
       - args:
         - sh
         - -c
-        - sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories<Paste> && apk add --no-cache socat && socat TCP-LISTEN:80,fork,reuseaddr OPENSSL:kubernetes-dashboard:443,verify=0
+        - sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && apk add --no-cache socat && socat TCP-LISTEN:80,fork,reuseaddr OPENSSL:kubernetes-dashboard:443,verify=0
         image: alpine
         imagePullPolicy: Always
         name: socat

@@ -47,8 +47,9 @@ spec:
         args:
         - --accesslog
         - --api
+        - --api.debug
         - --api.insecure
-        - --log.level=INFO
+        - --log.level=DEBUG
         - --metrics.prometheus
         - --providers.kubernetesingress
         - --entrypoints.http.Address=:80

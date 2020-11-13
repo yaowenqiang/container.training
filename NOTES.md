@@ -133,14 +133,13 @@ done
 
 ## install Cilium
 > https://docs.cilium.io/en/stable/gettingstarted/k8s-install-default/
-## install cotp
-> sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.4/ctop-0.7.4-linux-amd64 -O /usr/local/bin/ctop
-## install lazydocker
-> curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
-
 
 ## ingress
 > https://kubernetes.io/zh/docs/concepts/services-networking/ingress/
 
 # treafik
 > https://doc.traefik.io/traefik/v1.7/user-guide/kubernetes/
+
+## access dashboard via proxy
+
+# http://192.168.101.10:8001/api/v1/namespaces/kube-system/services/traefik-ingress-service:8080/proxy/dashboard/#/
