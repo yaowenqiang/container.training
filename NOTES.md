@@ -140,6 +140,32 @@ done
 # treafik
 > https://doc.traefik.io/traefik/v1.7/user-guide/kubernetes/
 
-## access dashboard via proxy
+# Owners and dependents
 
-# http://192.168.101.10:8001/api/v1/namespaces/kube-system/services/traefik-ingress-service:8080/proxy/dashboard/#/
+
+> get object owner info
+
+>  k get all  -o custom-columns=NAME:.metadata.name,\
+> OWNER-KIND:.metadata.ownerReferences[0].kind,\ 
+> OWNER-NAME:.metadata.ownerReferences[0].name  -A
+
+## object deleting policy
+> kubectl delete objType objName --casecade=false
+> kubectl delete objType objName --casecade=true
+
+# get orphan objects
+
+> kubectl get pod -o json | jq -r "
+      .items[]
+      | select(.metadata.ownerReferences|not)
+      | .metadata.name"
+
+
+# delete orphan objects
+
+>     kubectl get pod -o json | jq -r "
+          .items[]
+          | select(.metadata.ownerReferences|not)
+          | .metadata.name" | xargs kubectl delete pod
+
+
